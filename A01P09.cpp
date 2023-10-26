@@ -7,7 +7,7 @@ int main(){
     cout<<"Enter letter: ";
     cin>>letter;
 
-    cout<<"ASCII VALUE: "<<int(letter);
+    cout<<"\nASCII VALUE: "<<int(letter);
 
     return 0;
 }
