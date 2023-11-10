@@ -6,7 +6,7 @@ int main(){
 
     cout<<"\nEnter ASCII value: ";
     cin>>ascii_value;
-
+    
     cout<<"\nASCII character: "<<char(ascii_value);
 
     return 0;
