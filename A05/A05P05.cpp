@@ -3,26 +3,27 @@ using namespace std;
 
 class Student {
     private: 
-        string name;
-        int id;
+        string name, id;
+        void showDetails() {
+            cout<<"\nName: "<<name<<"\nID: "<<id;
+        }
+
     public:
         void setDetails() {
             cout<<"Enter name: ";
             getline(cin, name);
 
             cout<<"Enter ID: ";
-            cin>>id;
+            getline(cin,id);
+            showDetails();
         }
 
-        void display() {
-            cout<<"\nName: "<<name<<"\nID: "<<id;
-        }
+        
 };
 
 int main() {
     Student s1;
     s1.setDetails();
-    s1.display();
 
     return 0;   
 }

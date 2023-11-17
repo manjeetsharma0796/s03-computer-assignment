@@ -5,9 +5,9 @@ using namespace std;
 int main()
 {
     char a;
-    
-    cout<<"Enter character: ";
-    cin>>a;
+
+    cout << "Enter character: ";
+    cin >> a;
 
     int asciiValue = tolower(a);
 
@@ -24,9 +24,13 @@ int main()
     {
         cout << "It's a vowel";
     }
-    else if (asciiValue > 64 && asciiValue < 123)
+    else if (asciiValue > 96 && asciiValue < 123)
     {
         cout << "It's a consonant";
+    }
+    else
+    {
+        cout << "It's a special character";
     }
     return 0;
 }
